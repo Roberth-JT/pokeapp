@@ -15,14 +15,15 @@
         android:theme="@style/Theme.Movil3431">
         <activity
             android:name=".PokemonJetpackActivity"
-            android:exported="false"
-            android:label="@string/title_activity_pokemon_jetpack"
-            android:theme="@style/Theme.Movil3431" />
-        <activity
-            android:name=".ui.theme.PokemonJetPackActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_pokemon_jet_pack"
-            android:theme="@style/Theme.Movil3431" />
+            android:theme="@style/Theme.Movil3431">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".JetPackActivity"
             android:exported="true"
@@ -33,11 +34,7 @@
             android:exported="true"
             android:label="@string/title_activity_contact_jet_pack"
             android:theme="@style/Theme.Movil3431">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

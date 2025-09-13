@@ -1,6 +1,6 @@
 package com.upn.movil3431.entities
 
- class Pokemon(
+ data class Pokemon(
     val name: String,
     val url: String
 )
